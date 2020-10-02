@@ -1,0 +1,3 @@
+HelloJava
+123
+You have 400 gold coins
