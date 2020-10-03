@@ -4,14 +4,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import java.io.PrintStream;
 
 public class SomeNewStreamTesting {
-
-
 
     public static void main(String[] args)  {
        try {
@@ -22,6 +22,23 @@ public class SomeNewStreamTesting {
     }
 
     public static void returnItn() throws FileNotFoundException {
+
+
+int step = 3;
+        Person[] person = new Person[4];
+        person[0]  = new Person(23 ,"arpit");
+        person[1] = new Person(35, "postum");
+        person[2] = new Person(45, "tamper");
+        Person[] persons = Arrays.copyOfRange(person, 0, person.length -1);
+        Arrays.stream(persons).forEach(System.out::print);
+
+        Person[] pe=IntStream.range(0, person.length).filter(i -> i %  step == 0).mapToObj(i -> person[i]).toArray(Person[]::new);
+
+        int count = 2;
+        Arrays.stream(person, person.length- count, person.length).toArray(Person[]::new);
+
+
+
         File file = new File("./src/com/company/tapzo.txt");
         FileOutputStream  s = new FileOutputStream("tpx.txt");
 

@@ -10,10 +10,22 @@ public class Person {
     public static Integer p;
     public Map<Integer, Integer> map = new HashMap<>();
 
+    public Person(Integer age, String name) {
+        this.Age = age;
+        this.Name = name;
+    }
 
     public void setMap(int key, int value) {
             map.put(key, value);
     }
 
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "Age=" + Age +
+                ", Name='" + Name + '\'' +
+                ", map=" + map +
+                '}';
+    }
 }

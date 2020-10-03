@@ -27,10 +27,10 @@ public class TesterC {
 
 
 
-        If inst = new implementingClass();
-        inst.defaultMethod();
-//        inst.instanceMethod1();
-        inst.instanceMethod2();
+//        If inst = new implementingClass();
+//        inst.defaultMethod();
+////        inst.instanceMethod1();
+//        inst.instanceMethod2();
 
 
         int lp =1;
@@ -74,14 +74,14 @@ public class TesterC {
         System.out.println(promotion.salary.income);
         promotion.promote();
         System.out.println(promotion.salary.income);
-
-        Person p = new Person();
-
-        p.setMap(4, 10);
-
-        System.out.println(p.map.get(4));
-        Person t = new Person();
-        System.out.println(t.map.get(5));
+//
+//        Person p = new Person();
+//
+//        p.setMap(4, 10);
+//
+//        System.out.println(p.map.get(4));
+//        Person t = new Person();
+//        System.out.println(t.map.get(5));
 
         String [] arr = new String[]{"Arpit", "Joe", "Sanders"};
 
