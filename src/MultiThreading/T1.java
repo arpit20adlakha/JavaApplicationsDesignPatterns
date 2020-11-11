@@ -10,6 +10,7 @@ public class T1 extends Thread {
     @Override
     public void run() {
         a.setNumber(10);
+
         SomeClass.doSomething();
     }
 }

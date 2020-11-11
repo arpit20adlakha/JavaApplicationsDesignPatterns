@@ -1,6 +1,6 @@
 package BankAccountDemo;
 
-class CurrentAccount extends Account {
+public class CurrentAccount extends Account {
 
     @Override
     public boolean isChequeAvailable() {

@@ -1,6 +1,6 @@
 package BankAccountDemo;
 
-abstract class Account {
+public abstract class Account {
     public abstract void interest();
 
     public abstract boolean isChequeAvailable();
