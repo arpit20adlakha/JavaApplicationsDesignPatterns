@@ -12,8 +12,15 @@ public class Kitchen {
     public static Object bowl = new Object();
 
     public static void main(String[] args) throws IOException {
+
+        Path source = Paths.get("src/AdvancedJavaAndGenerics/example.txt");
+        Path dest = Paths.get("src/AdvancedJavaAndGenerics/new.txt");
+        Files.copy(source, dest);
+
         Path path = Paths.get("src/AdvancedJavaAndGenerics/example.txt");
-        Files.deleteIfExists(path);
+//        Files.deleteIfExists(path);
+        System.out.println(path.getParent());
+
 
         FilenameFilter filter = (file, fileName) -> {
             return fileName.contains(".");

@@ -16,4 +16,8 @@ public class Testing {
         String na = c.getNameString(mg);
         System.out.println(na);
     }
+
+    public static <T> String makeString(String incoming) {
+        return incoming.toLowerCase();
+    }
 }
